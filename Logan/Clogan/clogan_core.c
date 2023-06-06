@@ -204,7 +204,7 @@ clogan_init(const char *cache_dirs, const char *path_dirs, int max_file, const c
         _mmap_file_path = NULL;
     }
 
-    aes_init_key_iv(encrypt_key16, encrypt_iv16);
+    aes_init_key_iv_clogan(encrypt_key16, encrypt_iv16);
 
     size_t path1 = strlen(cache_dirs);
     size_t path2 = strlen(LOGAN_CACHE_DIR);

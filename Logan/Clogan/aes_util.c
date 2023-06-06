@@ -32,7 +32,7 @@ void aes_encrypt_clogan(unsigned char *in, unsigned char *out, int length, unsig
     mbedtls_aes_crypt_cbc(&context, MBEDTLS_AES_ENCRYPT, length, iv, in, out); //加密
 }
 
-void aes_init_key_iv(const char *key, const char *iv) {
+void aes_init_key_iv_clogan(const char *key, const char *iv) {
     memcpy(KEY, key, 16);
     memcpy(IV, iv, 16);
 }
